@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+html{
+    scroll-behavior: smooth;
+}
+
+@theme {
+  /* --font-display: "Satoshi", "sans-serif"; */
+  --color-primary-btn: #0F477F;
+  --color-primary-orange: #f46464;
+  --color-primary-yellow: #f5c600;
+  --color-primary-green: #c2da61;
+  --color-active-color: #667A8A;
+}
+
+@layer{
+    .section_container{
+      @apply max-w-[1380px] container mx-auto
+    }
+
+    .section_body{
+      @apply max-w-[1640px] container mx-auto 
+    }
+    /* .section_container_1{
+      @apply max-w-[1240px] container mx-auto
+    }
+
+    .container_padding{
+        @apply mx-auto px-4 py-28
+    }
+
+    .sidebar_width{
+        @apply max-w-[400px] container
+    }
+
+    .fixed-tag {
+        display: inline-block;
+        width: 70px;
+        text-align: center;
+} */
+}
