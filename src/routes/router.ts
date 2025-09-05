@@ -44,6 +44,11 @@ const router = createRouter({
             component: () => import("../Pages/Hurghada_Adventures/ParadisePage.vue")
         },
         {
+            path: "/hawksApartments",
+            name: "HawksApartments",
+            component: () => import("../Pages/Hawks_Apartment/HawksApartments.vue")
+        },
+        {
             path: "/aldauHeights",
             name: "AldauHeights",
             component: () => import("../Pages/Hawks_Apartment/Aldau_Heights.vue")

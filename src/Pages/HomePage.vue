@@ -7,7 +7,7 @@ import Home_Adventures from "../components/AdventureComponents/Home_Adventures.v
 <template>
   <section id="hero_section mt-6 ">
     <div class="h-[100vh] box flex items-center justify-end pr-22">
-      <img src="../images/logo_1.png" alt="Logo" />
+      <img src="../images/logo_1.png" alt="Logo" class="mt-[30%]" />
     </div>
   </section>
 

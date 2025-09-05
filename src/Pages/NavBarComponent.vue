@@ -70,12 +70,12 @@ const activeIndex2 = ref("1");
     </div>
     <div
       class="py-4 px-4 flex flex-row justify-between items-center text-white"
-      :class="route.name === 'HomePage' || route.name ===  'AdventureHome' ? 'bg-transparent' : 'bg-black'"
+      :class="route.name === 'HomePage' || route.name ===  'AdventureHome' || route.name === 'HawksApartments' ? 'bg-transparent' : 'bg-black'"
     >
       <span class="text-5xl font-light tracking-widest"
         >HURGHADA HAWKS HOLIDAY</span
       >
-      <div class="flex flex-row space-x-6 text-sm tracking-widest font-medium">
+      <div class="flex flex-row space-x-6 text-sm tracking-widest font-medium items-center">
         <router-link :to="{ name: 'HomePage' }">HOME</router-link>
 
         <el-dropdown
@@ -118,10 +118,12 @@ const activeIndex2 = ref("1");
           placement="bottom-end"
           class="no-hover-border cursor-pointer"
         >
-          <span class="text-white">HAWKS APARTMENTS</span>
+          <span class="text-white">APARTMENTS</span>
           <template #dropdown>
             <el-dropdown-menu>
-              <el-dropdown-item>HAWKS APARTMENT HOME</el-dropdown-item>
+              <el-dropdown-item><router-link :to="{ name: 'HawksApartments' }"
+                  >HAWKS APARTMENTS</router-link
+                ></el-dropdown-item>
               <el-dropdown-item><router-link :to="{ name: 'AldauHeights' }"
                   >ALDAU HEIGHTS</router-link
                 ></el-dropdown-item>
